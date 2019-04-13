@@ -1,6 +1,8 @@
 const https = require("https");
 const fs = require("fs");
 
+const stripFromDescription = /Kingdom Code is a community of Christians who work in the world of technology[^.]*\./;
+
 const combineEvents = function(oldEvents, newEvents) {
   let events = oldEvents;
   for(let n in newEvents) {
@@ -29,11 +31,11 @@ function loadEventsPage(p) {
         let d = JSON.parse(data);
         d.data.events.forEach(function (e) {
           events.push({
-            "name": e.name.text,
+            "name": e.name.text.trim(),
             "city": e.venue.address.city,
             "date": e.start.local.replace(/T.*$/, ""),
-            "url": e.url,
-            "description": e.description.text
+            "url": e.url.trim(),
+            "description": e.description.text ? e.description.text.replace(stripFromDescription, '').trim() : null
           });
         });
         if (d.data.has_next_page) {
