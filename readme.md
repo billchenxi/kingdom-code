@@ -9,6 +9,7 @@ Add new events at the top in the format:
 ```
   {
     "name": "Meetup",
+    "city": "London",
     "date": "2018-10-18",
     "url": "https://eventbrite.com/…",
     "description": "This is an event description"
