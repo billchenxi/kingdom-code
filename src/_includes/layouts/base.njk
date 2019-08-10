@@ -26,6 +26,10 @@
     <meta property="og:locale" content="en_GB">
     <meta property="og:image" content="/_assets/_img/kingdom-code-open-graph.jpg">
     <meta property="og:url" content="{{ basics.url }}">
+
+    {% if canonical %}
+      <link rel="canonical" href="{{ canonical }}" />
+    {% endif %}
   </head>
 
   <body>

@@ -44,4 +44,15 @@
     display: table;
     margin: 10px auto;
   }
+
+  &__canonical {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid #ee5c53;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 720px;
+  }
 }

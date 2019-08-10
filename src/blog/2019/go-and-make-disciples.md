@@ -4,6 +4,7 @@ tags: Build
 author: James Doc
 date: 2019-08-12
 intro: How can technology, software development, coding and design help the church in the 21st century?
+canonical: http://www.srtp.org.uk/srtp/news/
 ---
 How might we put God's word front and centre in our evangelism? It's a great challenge for all Christians, because we're convinced that the Bible present us with _"words of eternal life_" (John 6v68). But how can technology, software development, coding and design help the church answer this kind of question?
 
